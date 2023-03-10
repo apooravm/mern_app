@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <script defer src="publicApp.js"></script>
+    <style>
+       /* main:hover {
+           background-color: aquamarine;
+       } */
+       /* main {
+        margin: auto;
+        right: 0px;
+        width: 300px;
+        height: 50%;
+        padding: 10px;
+
+       } */
+
+       main {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       .buttonClass {
+          border-radius: 2px;
+          border: 0px;
+          cursor: pointer;
+       }
+
+       .buttonClass:hover {
+         background-color: rgba(127, 255, 212, 0.384);
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Hi 😢</h1>
+    <main>
+        <!-- <form action="/getInfo" method="post">
+            <input name="inputValue" type="text" id="inputVal:ID" style="padding: 20px;" autocomplete="off">
+            <button type="submit" style="padding: 20px;">Submit</button>
+        </form> -->
+        <div id="buttonValuePair">
+          <input class="inputClass" name="inputValue" type="text" id="inputValID" style="padding: 20px;" autocomplete="off">
+          <button type="submit" style="padding: 20px;" onclick="postValue()" class="buttonClass">Submit</button>
+        </div>
+    </main>
+
+    <button onclick="getLocation()">Get location</button>
+    <div id="locationCoords"></div>
+</body>
+</html>

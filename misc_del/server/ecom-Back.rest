@@ -1,0 +1,40 @@
+GET http://localhost:3000/getInfo
+
+###
+POST http://localhost:3000/api/user/usertest
+content-type: application/json
+
+{
+    "data": "Test Data 1"
+}
+
+###
+# Register
+POST http://localhost:3000/api/auth/register
+content-type: application/json
+
+{
+    "username": "newUser",
+    "email": "newUser@gmail.com",
+    "password": "1234"
+}
+
+###
+# Login
+POST http://localhost:3000/api/auth/login
+content-type: application/json
+
+{
+    "username": "mon",
+    "password": "1234"
+}
+###
+
+GET http://localhost:3000/
+
+
+###
+# Update User
+
+PUT http://localhost:3000/api/user/
+Content-Type: application/json
