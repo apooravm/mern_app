@@ -5,7 +5,7 @@ const ProductSchema = new mongoose.Schema(
         product_id: { type: Number, required: true, unique: true},
 
         // link onsite
-        link: { type: String, required: true },
+        link: { type: String },
 
         variant_sku: { type: String },
 
@@ -20,7 +20,7 @@ const ProductSchema = new mongoose.Schema(
         size: { type: String },
         brand: { type: String, required: true },
         // link to image
-        images: { type: String, required: true },
+        images: [{ type: String, required: true }],
         is_in_stock: { type: String, required: true },
         type: { type: String },
         ideal_for: { type: String },

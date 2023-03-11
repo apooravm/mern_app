@@ -1,0 +1,139 @@
+* {
+    font-family: monospace;
+    font-size: large;
+}
+
+.main-form {
+    
+    /* height: 100vh; */
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 80%;
+    max-width: 80%;
+
+    margin-bottom: 10%;
+}
+
+.main-Product {
+    padding: 1%;
+    border: 1px solid;
+    margin: 1%;
+}
+
+#root-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#image-div {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+/* # for id, . for classname */
+#image_from_url { 
+    width: 50%;
+    height: auto;
+}
+
+.image-set {
+    margin: 1%;
+    padding-inline: 1%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+}
+
+.form-divs {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-div {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+input {
+    margin-inline: 10%;
+
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+
+    color: rgb(59, 59, 59);
+}
+input::placeholder {
+    color: rgba(121, 121, 121, 0.856);
+}
+input:focus {
+    color: black;
+    outline-width: 0;
+    /* background-color: rgba(78, 78, 78, 0.171); */
+}
+input:hover {
+    background-color: cornsilk;
+}
+
+select {
+    width: inherit;
+    max-width: inherit;
+    padding: inherit;
+    margin: inherit;
+}
+
+#dropdown-option {
+    margin: inherit;
+    width: inherit;
+
+    margin-block: 2%;
+    margin-inline: 10%;
+
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+}
+
+label {
+    /* margin-block: 1%; */
+    margin-inline: 10%;
+
+    padding-top: 3%;
+    font-weight: 900;
+    /* padding-bottom: 1.5%; */
+}
+
+select {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+}
+select:focus {
+    outline-width: 0;
+}
+
+button {
+    margin-left: 10%;
+    width: 50%;
+    padding-block: 3%;
+    
+    font-weight: 900;
+    border: 0;
+}
+button:hover {
+    background-color: rgba(240, 128, 128, 0.582);
+}
