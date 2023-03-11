@@ -103,7 +103,7 @@ class PostProduct extends React.Component
                     <div className='form-divs' id='product-title'>
                         <label>Product Image URLs</label>
                         <div className='input-div'>
-                            <input type="text" placeholder='product title' autoComplete='off' spellCheck="false" onChange={(val) => {this.setState({productINFO['title']: val.target.value})}}/>
+                            <input type="text" placeholder='product title' autoComplete='off' spellCheck="false" onChange={(val) => {this.setState({productINFO: {...this.state.productINFO, title: val.target.value}})}}/>
                             <input required type="text" placeholder='product Image URL Primary' autoComplete='off' spellCheck="false" onChange={(url) => {this.setState({image_url_primary: url.target.value})}}/>
                             <input type="text" placeholder='product Image URL Other' autoComplete='off' spellCheck="false" onChange={(url) => {this.setState({image_url_other1: url.target.value})}}/>
                             <input type="text" placeholder='product Image URL Other' autoComplete='off' spellCheck="false" onChange={(url) => {this.setState({image_url_other2: url.target.value})}}/>
